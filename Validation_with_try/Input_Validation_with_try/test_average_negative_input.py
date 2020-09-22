@@ -12,7 +12,7 @@ from Input_Validation_with_try import input_validation
 class MyTestCase(unittest.TestCase):
 
     def test_average(self):
-        with result.patch('builtins.input', side_effect=[-95, 85, -90]):
+        with result.patch('builtins.input', side_effect=[-95, -85, -90]):
             self.assertRaises(ValueError)
 
 
